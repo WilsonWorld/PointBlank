@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: aa2890ea6cdc2cd4daf38a80a0927687
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: MAC10
+    100002: MAC10_2
+    100004: MAC10_3
+    100006: MAC10_4
+    100008: MAC10_5
+    100010: MAC10_6
+    100012: MAC10_7
+    100014: MAC10_8
+    100016: MAC10_9
+    100018: //RootNode
+    400000: MAC10
+    400002: MAC10_2
+    400004: MAC10_3
+    400006: MAC10_4
+    400008: MAC10_5
+    400010: MAC10_6
+    400012: MAC10_7
+    400014: MAC10_8
+    400016: MAC10_9
+    400018: //RootNode
+    2100000: Cartridge
+    2100002: Bullets
+    2100004: Stock
+    2100006: Small_Parts
+    2100008: Magazin
+    2100010: Canon
+    2100012: Bolt
+    2100014: Upper
+    2100016: Lower
+    2300000: MAC10
+    2300002: MAC10_2
+    2300004: MAC10_3
+    2300006: MAC10_4
+    2300008: MAC10_5
+    2300010: MAC10_6
+    2300012: MAC10_7
+    2300014: MAC10_8
+    2300016: MAC10_9
+    3300000: MAC10
+    3300002: MAC10_2
+    3300004: MAC10_3
+    3300006: MAC10_4
+    3300008: MAC10_5
+    3300010: MAC10_6
+    3300012: MAC10_7
+    3300014: MAC10_8
+    3300016: MAC10_9
+    4300000: MAC10
+    4300002: MAC10_2
+    4300004: MAC10_3
+    4300006: MAC10_4
+    4300008: MAC10_5
+    4300010: MAC10_6
+    4300012: MAC10_7
+    4300014: MAC10_8
+    4300016: MAC10_9
+    6400000: MAC10
+    6400002: MAC10_2
+    6400004: MAC10_3
+    6400006: MAC10_4
+    6400008: MAC10_5
+    6400010: MAC10_6
+    6400012: MAC10_7
+    6400014: MAC10_8
+    6400016: MAC10_9
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bolt
+    second: {fileID: 2100000, guid: c1523f57133a7ce4e9cf9889123c970a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bullets
+    second: {fileID: 2100000, guid: 2275bdcbe05db9a4aae2fc17ae50a481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canon
+    second: {fileID: 2100000, guid: 1fd6e2fad26aa4a4ab79434c13c1e889, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartridge
+    second: {fileID: 2100000, guid: 32790b4004c818f4b8e45891a4499f46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lower
+    second: {fileID: 2100000, guid: e1b67632b5b5e8b4f9d6f853c2805678, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Magazin
+    second: {fileID: 2100000, guid: fa21f35db24bdb248becfff1d6b9aa21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Small_Parts
+    second: {fileID: 2100000, guid: 4dc7fe591b90ccb448eed72e27b526f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stock
+    second: {fileID: 2100000, guid: 68d492d4c76820e45b96e65f897d4839, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Upper
+    second: {fileID: 2100000, guid: cdcd4c4b3ee2cbf4ebf59b296bc90392, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 54
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 9
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

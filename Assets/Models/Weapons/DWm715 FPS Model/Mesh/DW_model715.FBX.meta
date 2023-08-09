@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: c4a8f393ea9df344583b022831f75d9c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: DW_BaseModel
+    100002: DW_Bullet_0
+    100004: DW_Bullet_1
+    100006: DW_Bullet_2
+    100008: DW_Bullet_3
+    100010: DW_Bullet_4
+    100012: DW_Bullet_5
+    100014: DW_Hummer
+    100016: DW_MagazineAssembly
+    100018: //RootNode
+    100020: DW_Trigger
+    100022: Magazine
+    400000: DW_BaseModel
+    400002: DW_Bullet_0
+    400004: DW_Bullet_1
+    400006: DW_Bullet_2
+    400008: DW_Bullet_3
+    400010: DW_Bullet_4
+    400012: DW_Bullet_5
+    400014: DW_Hummer
+    400016: DW_MagazineAssembly
+    400018: //RootNode
+    400020: DW_Trigger
+    400022: Magazine
+    2100000: DW_BaseMat
+    2300000: DW_BaseModel
+    2300002: DW_Bullet_0
+    2300004: DW_Bullet_1
+    2300006: DW_Bullet_2
+    2300008: DW_Bullet_3
+    2300010: DW_Bullet_4
+    2300012: DW_Bullet_5
+    2300014: DW_Hummer
+    2300016: DW_MagazineAssembly
+    2300018: DW_Trigger
+    3300000: DW_BaseModel
+    3300002: DW_Bullet_0
+    3300004: DW_Bullet_1
+    3300006: DW_Bullet_2
+    3300008: DW_Bullet_3
+    3300010: DW_Bullet_4
+    3300012: DW_Bullet_5
+    3300014: DW_Hummer
+    3300016: DW_MagazineAssembly
+    3300018: DW_Trigger
+    4300000: DW_Trigger
+    4300002: DW_Hummer
+    4300004: DW_MagazineAssembly
+    4300006: DW_Bullet_4
+    4300008: DW_Bullet_3
+    4300010: DW_Bullet_5
+    4300012: DW_Bullet_2
+    4300014: DW_Bullet_0
+    4300016: DW_Bullet_1
+    4300018: DW_BaseModel
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
