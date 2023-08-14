@@ -28,8 +28,17 @@ public class Turret : Enemy
         }
 
         if (DetectedPlayer == false)
+        {
+            if (SeesPlayer == false)
+                return;
+
+            TargetDistance = 0.0f;
+            SeesPlayer = false;
+            UpdateTurretLight(SeesPlayer);
             return;
-        else {
+        }
+        else
+        {
             SmoothLookRotation(SwivelObj);
             DetectPlayer();
         }
@@ -54,12 +63,6 @@ public class Turret : Enemy
             SeesPlayer = true;
             UpdateTurretLight(SeesPlayer);
         }
-        else {
-            TargetDistance = 0.0f;
-            SeesPlayer = false;
-            UpdateTurretLight(SeesPlayer);
-            return;
-        }
     }
 
     // When in attack range, activates an attack that raycasts for the player, reducing their health if hit
@@ -69,6 +72,11 @@ public class Turret : Enemy
             Attacking = true;
             int layerMask = 1 << 8;
             GameObject gObj = CastForObject(SwivelObj, layerMask);
+
+            if (gObj == null) {
+                Attacking = false;
+                return;
+            }
 
             if (gObj.GetComponent<HealthComponent>())
                 gObj.GetComponent<HealthComponent>().TakeDamage(AttackDamage);

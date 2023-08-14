@@ -61196,10 +61196,10 @@ MonoBehaviour:
   EnemyRef: {fileID: 3905398376725878625}
   EnemyHealth: {fileID: 3905398376726104900}
   ActionRange: 100
-  AttackDamage: 1
+  AttackDamage: 2
   AttackSpeed: 2
   DespawnTime: 4
-  RotationSpeed: 1
+  RotationSpeed: 0.8
   SwivelObj: {fileID: 3905398376725878631}
   ExplosionFlash: {fileID: 1142059070}
   TurretLight: {fileID: 1707390013}
@@ -61313,7 +61313,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
