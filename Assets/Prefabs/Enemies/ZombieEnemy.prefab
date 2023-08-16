@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf631275db767c049ba5cb82f4ba3304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainZombieRef: {fileID: 3109492972835214316}
+  EnemyRef: {fileID: 0}
 --- !u!1 &1822556922794220976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,9 +1596,12 @@ MonoBehaviour:
   EnemyRef: {fileID: 3502823158356719902}
   EnemyHealth: {fileID: 3109492972835214317}
   ActionRange: 24
-  DespawnTime: 10
-  BaseDamage: 8
+  AttackDamage: 5
   AttackSpeed: 10
+  DespawnTime: 10
+  RotationSpeed: 1
+  MovementSpeed: 2
+  AttackRange: 6
   CameraShakeFX: {fileID: 0}
   BulletImpact: {fileID: 3109492972586311650}
   ZombieDeath: {fileID: 3109492971539409239}

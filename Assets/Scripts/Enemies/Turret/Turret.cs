@@ -9,6 +9,7 @@ public class Turret : Enemy
 {
     [Header("Turret Settings")]
     public GameObject SwivelObj;
+    public GameObject MuzzleFlashObj;
     public GameObject ExplosionFlash;
     public GameObject TurretLight;
     public Color RedLight;
@@ -19,6 +20,7 @@ public class Turret : Enemy
     [SerializeField] private AudioSource BulletImpact;
     [SerializeField] private AudioSource TurretDeath;
     [SerializeField] private AudioSource TurretAttack;
+    [SerializeField] private GameObject ExplosionFX;
 
     protected void Update()
     {
@@ -88,6 +90,10 @@ public class Turret : Enemy
     // Controls what animations are played at specific times and applies damage FX to the player controller
     IEnumerator AttackAnimation()
     {
+        MuzzleFlashObj.SetActive(true);
+        yield return new WaitForSeconds(0.06f);
+        MuzzleFlashObj.SetActive(false);
+
         PlayAttackSFX();
         CameraShakeFX.ShakeCamera();
 
@@ -112,7 +118,7 @@ public class Turret : Enemy
         base.TriggerDeath();
         SwivelObj.SetActive(false);
         TurretDeath.Play();
-        //StartCoroutine(DeathAnimation());
+        StartCoroutine(DeathAnimation());
         StartCoroutine(DestroyEnemy());
     }
 
@@ -138,8 +144,9 @@ public class Turret : Enemy
     IEnumerator DeathAnimation()
     {
         ExplosionFlash.SetActive(true);
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.1f);
         ExplosionFlash.SetActive(false);
+        ExplosionFX.SetActive(true);
     }
 
     public AudioSource BulletImpactSFX
