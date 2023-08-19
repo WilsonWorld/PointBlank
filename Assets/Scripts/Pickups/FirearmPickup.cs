@@ -48,8 +48,12 @@ public class FirearmPickup : Interactable
     // Ensures the Ammo & Bullet Displays are active, unlocks the pistol and equips it for use.
     void EquipFirearm()
     {
-        AmmoDisplayObj.SetActive(true);
-        BulletDisplayUI.SetActive(true);
+        if (AmmoDisplayObj.activeSelf == false) {
+            AmmoDisplayObj.SetActive(true);
+            AmmoDisplayObj.GetComponent<AmmoDisplay>().WeaponIconUI.SetActive(true);
+            BulletDisplayUI.SetActive(true);
+        }
+
         EquipFromInventory();
         PlayPickupFX();
     }

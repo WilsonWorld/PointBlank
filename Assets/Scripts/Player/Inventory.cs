@@ -102,25 +102,10 @@ public class Inventory : MonoBehaviour
     {
         SetWeaponGripTargets(null, null);
 
-        // Pistol
-        m_Weapons[0].AmmoUI.transform.GetChild(4).gameObject.SetActive(false);
-        m_Weapons[0].gameObject.SetActive(false);
-
-        // Magnum 
-        m_Weapons[1].AmmoUI.transform.GetChild(5).gameObject.SetActive(false);
-        m_Weapons[1].gameObject.SetActive(false);
-
-        // Shotgun 
-        m_Weapons[2].AmmoUI.transform.GetChild(6).gameObject.SetActive(false);
-        m_Weapons[2].gameObject.SetActive(false);
-
-        // Rifle 
-        m_Weapons[3].AmmoUI.transform.GetChild(7).gameObject.SetActive(false);
-        m_Weapons[3].gameObject.SetActive(false);
-
-        // Sniper 
-        m_Weapons[4].AmmoUI.transform.GetChild(8).gameObject.SetActive(false);
-        m_Weapons[4].gameObject.SetActive(false);
+        for (int i =0; i < m_Weapons.Capacity; i++) {
+            m_Weapons[i].AmmoUI.transform.GetChild(i + 2).gameObject.SetActive(false);
+            m_Weapons[i].gameObject.SetActive(false);
+        }
     }
 
     // Activate the Pistol game object and UI elements
@@ -134,7 +119,7 @@ public class Inventory : MonoBehaviour
         m_CurrentWeapon = m_Weapons[0].gameObject;
         m_Weapons[0].gameObject.SetActive(true);
         m_Weapons[0].AmmoUI.SetWeaponDisplayIcon(m_Weapons[0].WeaponIconUI);
-        m_Weapons[0].AmmoUI.transform.GetChild(4).gameObject.SetActive(true);
+        m_Weapons[0].AmmoUI.transform.GetChild(2).gameObject.SetActive(true);
     }
 
     // Activate the Magnum game object and UI elements
@@ -148,7 +133,7 @@ public class Inventory : MonoBehaviour
         m_CurrentWeapon = m_Weapons[1].gameObject;
         m_Weapons[1].gameObject.SetActive(true);
         m_Weapons[1].AmmoUI.SetWeaponDisplayIcon(m_Weapons[1].WeaponIconUI);
-        m_Weapons[1].AmmoUI.transform.GetChild(5).gameObject.SetActive(true);
+        m_Weapons[1].AmmoUI.transform.GetChild(3).gameObject.SetActive(true);
     }
 
     // Activate the Shotgun game object and UI elements
@@ -162,7 +147,7 @@ public class Inventory : MonoBehaviour
         m_CurrentWeapon = m_Weapons[2].gameObject;
         m_Weapons[2].gameObject.SetActive(true);
         m_Weapons[2].AmmoUI.SetWeaponDisplayIcon(m_Weapons[2].WeaponIconUI);
-        m_Weapons[2].AmmoUI.transform.GetChild(6).gameObject.SetActive(true);
+        m_Weapons[2].AmmoUI.transform.GetChild(4).gameObject.SetActive(true);
     }
 
     // Activate the Rifle game object and UI elements
@@ -176,7 +161,7 @@ public class Inventory : MonoBehaviour
         m_CurrentWeapon = m_Weapons[3].gameObject;
         m_Weapons[3].gameObject.SetActive(true);
         m_Weapons[3].AmmoUI.SetWeaponDisplayIcon(m_Weapons[3].WeaponIconUI);
-        m_Weapons[3].AmmoUI.transform.GetChild(7).gameObject.SetActive(true);
+        m_Weapons[3].AmmoUI.transform.GetChild(5).gameObject.SetActive(true);
     }
 
     // Activate the Sniper game object and UI elements
@@ -190,7 +175,7 @@ public class Inventory : MonoBehaviour
         m_CurrentWeapon = m_Weapons[4].gameObject;
         m_Weapons[4].gameObject.SetActive(true);
         m_Weapons[4].AmmoUI.SetWeaponDisplayIcon(m_Weapons[4].WeaponIconUI);
-        m_Weapons[4].AmmoUI.transform.GetChild(8).gameObject.SetActive(true);
+        m_Weapons[4].AmmoUI.transform.GetChild(6).gameObject.SetActive(true);
     }
 
     // Add a grenade to the counter if the player isn't already at the max
