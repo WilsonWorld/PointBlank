@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 3155961633460424440}
   - component: {fileID: 2153657595658256105}
   - component: {fileID: 9177505910714142813}
+  - component: {fileID: 3109950915351529897}
   m_Layer: 0
   m_Name: HandDryer
   m_TagString: Untagged
@@ -293,3 +294,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &3109950915351529897
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876622454495396585}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.046200745
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

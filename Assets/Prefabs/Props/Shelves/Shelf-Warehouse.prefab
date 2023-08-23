@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7879963578161736941}
   - component: {fileID: 7980678214628847909}
+  - component: {fileID: 6693093306617039956}
   m_Layer: 0
   m_Name: Shelf-Warehouse
   m_TagString: Untagged
@@ -50,6 +51,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.5, y: 7.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &6693093306617039956
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769705322972349524}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.046200745
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &3945799475781936710
 GameObject:
   m_ObjectHideFlags: 0
