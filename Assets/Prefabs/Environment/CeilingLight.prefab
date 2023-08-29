@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 3429894195197666843}
   - component: {fileID: 3429894195197666845}
   - component: {fileID: 3429894195197666842}
+  - component: {fileID: 3279591864718460323}
   m_Layer: 0
   m_Name: CeilingLight
   m_TagString: Untagged
@@ -278,6 +279,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &3279591864718460323
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429894195197666841}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.046200745
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &3429894195597088841
 GameObject:
   m_ObjectHideFlags: 0
