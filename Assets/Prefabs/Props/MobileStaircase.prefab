@@ -346,6 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916707462705484824}
   - component: {fileID: 916707462705484827}
+  - component: {fileID: 6787914256205329056}
   m_Layer: 0
   m_Name: MobileStaircase
   m_TagString: Untagged
@@ -389,6 +390,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 8, z: 6}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &6787914256205329056
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916707462705484825}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.046200745
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &916707463381640445
 GameObject:
   m_ObjectHideFlags: 0
