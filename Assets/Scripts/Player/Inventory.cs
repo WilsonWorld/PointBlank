@@ -15,6 +15,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] int m_GrenadeCount;
     const int m_GrenadeMax = 3;
 
+    [Header("Item Inventory")]
+    public List<Key> m_Keys;
+
     [Header("Bone IK Constraint")]
     public TwoBoneIKConstraint m_RightHandConstraint;
     public TwoBoneIKConstraint m_LeftHandConstraint;

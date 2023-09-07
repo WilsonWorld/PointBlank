@@ -9,17 +9,26 @@ public class OpenDoors : Interactable
     public GameObject LeftDoor;
     public GameObject RightDoor;
     public GameObject DoorLight;
+    public GameObject LockLight;
     public Color RedLight;
     public Color GreenLight;
+    public Inventory PlayerInventoryRef;
 
+    [SerializeField] int DoorCode = -2;
     [SerializeField] bool isDoubleDoor = true;
+    [SerializeField] bool bLocked = false;
+    bool bOpened = false;
 
     private void Start()
     {
-        if (isDoubleDoor)
-        {
+        if (isDoubleDoor && DoorLight) {
             DoorLight.GetComponent<MeshRenderer>().material.color = RedLight;
             DoorLight.transform.GetChild(0).GetComponent<Light>().color = RedLight;
+        }
+
+        if (bLocked && LockLight) {
+            LockLight.GetComponent<MeshRenderer>().material.color = RedLight;
+            LockLight.GetComponent <Light>().color = RedLight;
         }
     }
 
@@ -39,17 +48,28 @@ public class OpenDoors : Interactable
         DeactivateDisplayUI();
     }
 
-    // Opens the doors
+    // Check if the door is locked and if the player has the key for it. Opens the doors if able.
     void Open()
     {
-        if (isDoubleDoor)
-        {
+        if (bLocked) {
+            foreach ( Key key in PlayerInventoryRef.m_Keys) {
+                if (key.KeyCode == DoorCode) {
+                    UpdateLockLight();
+                    bLocked = false;
+                    break;
+                }
+            }
+        }
+
+        if (bLocked)
+            return;
+
+        if (isDoubleDoor) {
             this.GetComponent<BoxCollider>().enabled = false;
             PlayOpenFX();
             UpdateDoorLight();
         }
-        else
-        {
+        else {
             PlayOpenFX();
         }
     }
@@ -60,13 +80,11 @@ public class OpenDoors : Interactable
         this.GetComponent<AudioSource>().Play();
         this.GetComponent<Animator>().Play("ButtonPress");
 
-        if (isDoubleDoor)
-        {
+        if (isDoubleDoor) {
             LeftDoor.GetComponent<Animator>().Play("LeftDoorSlide");
             RightDoor.GetComponent<Animator>().Play("RightDoorSlide");
         }
-        else
-        {
+        else {
             LeftDoor.GetComponent<Animator>().Play("SingleDoorSlide");
         }
     }
@@ -76,5 +94,14 @@ public class OpenDoors : Interactable
     {
         DoorLight.GetComponent<MeshRenderer>().material.color = GreenLight;
         DoorLight.transform.GetChild(0).GetComponent<Light>().color = GreenLight;
+    }
+
+    // Changes the lock light from red to green, showing it's been unlocked
+    void UpdateLockLight()
+    {
+        if (LockLight) {
+            LockLight.GetComponent<MeshRenderer>().material.color = GreenLight;
+            LockLight.GetComponent<Light>().color = GreenLight;
+        }
     }
 }
