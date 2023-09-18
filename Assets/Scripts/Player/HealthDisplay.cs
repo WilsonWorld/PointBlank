@@ -30,7 +30,7 @@ public class HealthDisplay : MonoBehaviour
     public void UpdateArmorDisplay(float armorCount)
     {
         ArmorDisplayText.GetComponent<Text>().text = armorCount.ToString();
-        ArmorDisplayFill.GetComponent<Image>().fillAmount = armorCount / 100.0f;
+        ArmorDisplayFill.GetComponent<Image>().fillAmount = armorCount / 50.0f;
     }
 
     // Update the Fill color based on the remain health %

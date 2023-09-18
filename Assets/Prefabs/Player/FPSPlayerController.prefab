@@ -3581,8 +3581,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8386423928398348731}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -48, y: -3.3, z: 2.7499924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4169,7 +4169,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4576,6 +4576,7 @@ MonoBehaviour:
   m_PreviousWeapon: {fileID: 0}
   m_GrenadePrefab: {fileID: 5200575423850993713, guid: 0465499011c3ec340b7481ffa662d911, type: 3}
   m_GrenadeCount: 0
+  m_Keys: []
   m_RightHandConstraint: {fileID: 3030161978234686757}
   m_LeftHandConstraint: {fileID: 8691624761042668028}
   m_RigBuilder: {fileID: 5039842801573804635}

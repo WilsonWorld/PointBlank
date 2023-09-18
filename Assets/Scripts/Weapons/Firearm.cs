@@ -46,12 +46,14 @@ public class Firearm : MonoBehaviour
 
     [Header("UI")]
     public AmmoDisplay AmmoUI;
+    public GameObject BulletDisplayUI;
     public GameObject CrosshairUI;
     public Texture WeaponIconUI;
 
     // Component / Object References
     protected Animator WeaponAnimator;
     protected GameObject WeaponObj;
+    private GameObject DevConsole;
 
     // Weapon States
     protected bool isAimingDownSights = false;
@@ -63,10 +65,14 @@ public class Firearm : MonoBehaviour
         WeaponObj = this.gameObject;
         WeaponAnimator = WeaponObj.GetComponent<Animator>();
         CurrentAmmo = MaxAmmo;
+        DevConsole = GameObject.Find("DeveloperConsole").transform.GetChild(0).gameObject;
     }
 
     protected virtual void Update()
     {
+        if (DevConsole.activeSelf)
+            return;
+
         UpdateAmmoDisplay();
 
         // Check for Fire input

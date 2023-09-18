@@ -101,7 +101,6 @@ public class FirearmPickup : Interactable
     IEnumerator DestroyPickup()
     {
         foreach (var render in PickupRenderers) {
-            //render.gameObject.SetActive(false);
             render.enabled = false;
         }
 

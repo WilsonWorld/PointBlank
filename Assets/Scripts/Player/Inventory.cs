@@ -214,6 +214,15 @@ public class Inventory : MonoBehaviour
         m_RigBuilder.Build();
     }
 
+    public void ActivateAmmoUI()
+    {
+        if (m_Weapons[0].AmmoUI.gameObject.activeSelf == false) {
+            m_Weapons[0].AmmoUI.gameObject.SetActive(true);
+            m_Weapons[0].AmmoUI.gameObject.GetComponent<AmmoDisplay>().WeaponIconUI.SetActive(true);
+            m_Weapons[0].BulletDisplayUI.SetActive(true);
+        }
+    }
+
     public void UnlockPistol() { m_PistolUnlocked = true; }
     public void UnlockMagnum() { m_MagnumUnlocked = true; }
     public void UnlockRifle() { m_RifleUnlocked = true; }

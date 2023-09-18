@@ -223,10 +223,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
+  m_fontSize: 72
   m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   prefix: /
   commands:
   - {fileID: 11400000, guid: 9b1aa216d00036841a961623dda72ccc, type: 2}
+  - {fileID: 11400000, guid: a8f2d0794f1caae43a69239ab585e36a, type: 2}
   uiCanvas: {fileID: 4386395961330262787}
   inputField: {fileID: 4386395960937744976}
 --- !u!114 &4386395960668118422
