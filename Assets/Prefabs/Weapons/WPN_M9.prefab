@@ -5767,7 +5767,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10218,6 +10218,7 @@ MonoBehaviour:
   BulletHoleMetal: {fileID: 82912119938220820, guid: 57d57a0f0d1dd6c4da51eada1b336119, type: 3}
   BulletHoleWood: {fileID: 82912119938220820, guid: a7e455574e153574aa29ca7cc69880cc, type: 3}
   AmmoUI: {fileID: 0}
+  BulletDisplayUI: {fileID: 0}
   CrosshairUI: {fileID: 0}
   WeaponIconUI: {fileID: 2800000, guid: 261894b2558a47b498a62504560d7857, type: 3}
 --- !u!1 &2602222707892550940
